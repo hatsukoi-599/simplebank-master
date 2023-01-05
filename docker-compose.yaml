@@ -13,7 +13,7 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - DB_SOURCE=postgresql://root:fish4869@postgres:5432/simple_bank?sslmode=disable
+      - DB_SOURCE=postgresql://root:fish4869@simple-bank.crhkt1ujsl1l.us-west-1.rds.amazonaws.com:5432/simple_bank
     depends_on:
       - postgres
     entrypoint:
